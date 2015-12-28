@@ -1,0 +1,28 @@
+_prefs: 
+  mapid: ''
+  saveCenter: true
+_properties: {}
+attribution: ''
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - 10.8875
+  - 46.7352
+  - 10
+description: ''
+format: "png8:m=h"
+interactivity_layer: ''
+layers: null
+maxzoom: 15
+minzoom: 0
+name: ''
+source: "mapbox:///mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v5"
+styles: 
+  - style.mss
+  - hillshade.mss
+  - place.mss
+  - terrain.mss
+template: ''
