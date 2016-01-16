@@ -1,5 +1,5 @@
 _prefs: 
-  mapid: ''
+  mapid: james-lane-conkling.bcfe30ed
   saveCenter: true
 _properties: {}
 attribution: ''
@@ -9,9 +9,9 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - 10.8875
-  - 46.7352
-  - 10
+  - 10.491
+  - 46.7935
+  - 14
 description: ''
 format: "png8:m=h"
 interactivity_layer: ''
@@ -24,5 +24,4 @@ styles:
   - style.mss
   - hillshade.mss
   - place.mss
-  - terrain.mss
 template: ''

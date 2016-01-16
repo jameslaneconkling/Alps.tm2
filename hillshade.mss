@@ -1,25 +1,25 @@
 @shadow: #e4dbd5;
 @highlight: #ffeed8;
 
-@min: 0;
-@max: 2000;
+@min: 1000;
+@max: 5000;
 @steps: 10;
 
-@0: (@max - @min)*(0/@steps);
-@1: (@max - @min)*(1/@steps);
-@2: (@max - @min)*(2/@steps);
-@3: (@max - @min)*(3/@steps);
-@4: (@max - @min)*(4/@steps);
-@5: (@max - @min)*(5/@steps);
-@6: (@max - @min)*(6/@steps);
-@7: (@max - @min)*(7/@steps);
-@8: (@max - @min)*(8/@steps);
-@9: (@max - @min)*(9/@steps);
-@10: (@max - @min)*(10/@steps);
+@0: (@max - @min)*(0/@steps) + @min;
+@1: (@max - @min)*(1/@steps) + @min;
+@2: (@max - @min)*(2/@steps) + @min;
+@3: (@max - @min)*(3/@steps) + @min;
+@4: (@max - @min)*(4/@steps) + @min;
+@5: (@max - @min)*(5/@steps) + @min;
+@6: (@max - @min)*(6/@steps) + @min;
+@7: (@max - @min)*(7/@steps) + @min;
+@8: (@max - @min)*(8/@steps) + @min;
+@9: (@max - @min)*(9/@steps) + @min;
+@10: (@max - @min)*(10/@steps) + @min;
 
 @low: #daefff;
 @high: #c7ad67;
-
+/*
 #contour::hypso {
   [ele<@0] { polygon-fill: @low; }
   [ele>=@0] { polygon-fill: mix(@high, @low, 0/@steps*100); }
@@ -36,7 +36,7 @@
   comp-op: multiply;
   opacity: 0.8;
 }
-
+*/
 
 #contour::line {
   line-width: 0.5;
@@ -50,5 +50,9 @@
   [level=78]{ polygon-fill: darken(@shadow, 0); }
   [level=67]{ polygon-fill: darken(@shadow, 4); }
   [level=56]{ polygon-fill: darken(@shadow, 10); }
+}
+
+#landcover {
+  //line-width: 0.5;
 }
 
