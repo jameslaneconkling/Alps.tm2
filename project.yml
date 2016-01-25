@@ -1,6 +1,6 @@
 _prefs: 
   mapid: james-lane-conkling.bcfe30ed
-  saveCenter: true
+  saveCenter: false
 _properties: {}
 attribution: ''
 bounds: 
@@ -9,16 +9,42 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - 10.491
-  - 46.7935
-  - 14
+  - 10.2722
+  - 46.7869
+  - 10
 description: ''
 format: "png8:m=h"
 interactivity_layer: ''
-layers: null
+layers: 
+  - contour.fill
+  - landcover
+  - landuse
+  - contour.line
+  - hillshade
+  - water.casing
+  - waterway.casing
+  - water.fill
+  - waterway.fill
+  - aeroway
+  - barrier_line
+  - building
+  - landuse_overlay
+  - tunnel
+  - road
+  - bridge
+  - admin
+  - contour.label
+  - country_label_line
+  - country_label
+  - state_label
+  - place_label
+  - water_label
+  - road_label
+  - waterway_label
+  - poi_label
 maxzoom: 15
-minzoom: 0
-name: ''
+minzoom: 7
+name: Alps
 source: "mapbox:///mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v5"
 styles: 
   - style.mss

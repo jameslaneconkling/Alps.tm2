@@ -4,47 +4,225 @@
 
 <Parameters>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">10.491,46.7935,14</Parameter>
+  <Parameter name="center">10.2722,46.7869,10</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">15</Parameter>
-  <Parameter name="minzoom">0</Parameter>
+  <Parameter name="minzoom">7</Parameter>
+  <Parameter name="name"><![CDATA[Alps]]></Parameter>
   <Parameter name="source"><![CDATA[mapbox:///mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v5]]></Parameter>
 </Parameters>
 
+
+<Style name="contour-poly/peaks" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([ele] &gt; 4000)</Filter>
+    <PolygonSymbolizer fill-opacity="0.06" fill="#d0b39f" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([ele] &gt; 4000)</Filter>
+    <PolygonSymbolizer fill-opacity="0.1" fill="#d0b39f" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([ele] &gt; 4000)</Filter>
+    <PolygonSymbolizer fill-opacity="0.1" fill="#d0b39f" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([ele] &gt; 4000)</Filter>
+    <PolygonSymbolizer fill-opacity="0.1" fill="#d0b39f" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([ele] &gt; 4000)</Filter>
+    <PolygonSymbolizer fill-opacity="0.1" fill="#bb9c86" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([ele] &gt; 4000)</Filter>
+    <PolygonSymbolizer fill-opacity="0.1" fill="#b06e40" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([ele] &gt; 4000)</Filter>
+    <PolygonSymbolizer fill-opacity="0.15" fill="#783f17" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([ele] &gt; 4000)</Filter>
+    <PolygonSymbolizer fill-opacity="0.4" fill="#783f17" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([ele] &gt; 3000)</Filter>
+    <PolygonSymbolizer fill-opacity="0.06" fill="#bb9c86" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([ele] &gt; 3000)</Filter>
+    <PolygonSymbolizer fill-opacity="0.1" fill="#bb9c86" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([ele] &gt; 3000)</Filter>
+    <PolygonSymbolizer fill-opacity="0.1" fill="#b06e40" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([ele] &gt; 3000)</Filter>
+    <PolygonSymbolizer fill-opacity="0.15" fill="#783f17" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([ele] &gt; 3000)</Filter>
+    <PolygonSymbolizer fill-opacity="0.4" fill="#783f17" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([ele] &gt; 2500)</Filter>
+    <PolygonSymbolizer fill-opacity="0.05" fill="#b06e40" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([ele] &gt; 2500)</Filter>
+    <PolygonSymbolizer fill-opacity="0.1" fill="#b06e40" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([ele] &gt; 2500)</Filter>
+    <PolygonSymbolizer fill-opacity="0.15" fill="#783f17" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([ele] &gt; 2500)</Filter>
+    <PolygonSymbolizer fill-opacity="0.4" fill="#783f17" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([ele] &gt; 2000)</Filter>
+    <PolygonSymbolizer fill-opacity="0.05" fill="#783f17" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([ele] &gt; 2000)</Filter>
+    <PolygonSymbolizer fill-opacity="0.15" fill="#783f17" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([ele] &gt; 2000)</Filter>
+    <PolygonSymbolizer fill-opacity="0.4" fill="#783f17" />
+  </Rule>
+</Style>
+<Style name="contour-poly" filter-mode="first" opacity="0.4">
+  <Rule>
+    <Filter>([ele] &gt;= 1000)</Filter>
+    <PolygonSymbolizer fill="#fdfaf1" />
+  </Rule>
+  <Rule>
+    <Filter>([ele] &gt;= 900)</Filter>
+    <PolygonSymbolizer fill="#f1f3ea" />
+  </Rule>
+  <Rule>
+    <Filter>([ele] &gt;= 800)</Filter>
+    <PolygonSymbolizer fill="#e5ece3" />
+  </Rule>
+  <Rule>
+    <Filter>([ele] &gt;= 700)</Filter>
+    <PolygonSymbolizer fill="#d9e5dc" />
+  </Rule>
+  <Rule>
+    <Filter>([ele] &gt;= 600)</Filter>
+    <PolygonSymbolizer fill="#cdded5" />
+  </Rule>
+  <Rule>
+    <Filter>([ele] &gt;= 500)</Filter>
+    <PolygonSymbolizer fill="#c1d7ce" />
+  </Rule>
+  <Rule>
+    <Filter>([ele] &gt;= 400)</Filter>
+    <PolygonSymbolizer fill="#b4d0c7" />
+  </Rule>
+  <Rule>
+    <Filter>([ele] &gt;= 300)</Filter>
+    <PolygonSymbolizer fill="#a8c9c0" />
+  </Rule>
+  <Rule>
+    <Filter>([ele] &gt;= 200)</Filter>
+    <PolygonSymbolizer fill="#9cc2b9" />
+  </Rule>
+  <Rule>
+    <Filter>([ele] &gt;= 100)</Filter>
+    <PolygonSymbolizer fill="#90bbb2" />
+  </Rule>
+  <Rule>
+    <Filter>([ele] &gt;= 0)</Filter>
+    <PolygonSymbolizer fill="#84b4ab" />
+  </Rule>
+  <Rule>
+    <Filter>([ele] &lt; 0)</Filter>
+    <PolygonSymbolizer fill="#84b4ab" />
+  </Rule>
+</Style>
+<Layer name="contour"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>contour-poly</StyleName>
+    <StyleName>contour-poly/peaks</StyleName>  </Layer>
 
 <Layer name="landcover"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
 
-<Style name="hillshade" filter-mode="first">
+<Style name="landuse-fill" filter-mode="first">
   <Rule>
-    <Filter>([level] = 56)</Filter>
-    <PolygonSymbolizer fill="#d0c0b6" />
-  </Rule>
-  <Rule>
-    <Filter>([level] = 67)</Filter>
-    <PolygonSymbolizer fill="#dcd0c9" />
-  </Rule>
-  <Rule>
-    <Filter>([level] = 78)</Filter>
-    <PolygonSymbolizer fill="#e4dbd5" />
-  </Rule>
-  <Rule>
-    <Filter>([level] = 89)</Filter>
-    <PolygonSymbolizer fill="#ffeed8" />
-  </Rule>
-  <Rule>
-    <Filter>([level] = 90)</Filter>
-    <PolygonSymbolizer fill="#fff2e2" />
-  </Rule>
-  <Rule>
-    <Filter>([level] = 94)</Filter>
-    <PolygonSymbolizer fill="#fff9f2" />
+    <Filter>([class] = 'glacier')</Filter>
+    <PolygonSymbolizer fill="#ffffff" />
   </Rule>
 </Style>
-<Layer name="hillshade"
+<Style name="landuse-casing" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'glacier')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-dasharray="2, 3" stroke="#a6aeb4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'glacier')</Filter>
+    <LineSymbolizer stroke="#a6aeb4" stroke-width="2" stroke-dasharray="2, 1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([class] = 'glacier')</Filter>
+    <LineSymbolizer stroke="#aaaaaa" stroke-width="1" />
+  </Rule>
+</Style>
+<Layer name="landuse"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>hillshade</StyleName>  </Layer>
+    <StyleName>landuse-casing</StyleName>
+    <StyleName>landuse-fill</StyleName>  </Layer>
 
 <Style name="contour-line" filter-mode="first">
   <Rule>
@@ -55,48 +233,191 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>contour-line</StyleName>  </Layer>
 
-<Layer name="landuse"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-      </Layer>
-
-<Style name="waterway" filter-mode="first">
+<Style name="hillshade" filter-mode="first" comp-op="multiply">
   <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <LineSymbolizer stroke-width="1.6" stroke="#c5e8f8" />
+    <Filter>([level] = 56)</Filter>
+    <PolygonSymbolizer fill="#c5bab4" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="1.2" stroke="#c5e8f8" />
+    <Filter>([level] = 67)</Filter>
+    <PolygonSymbolizer fill="#dbd4d0" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="1" stroke="#c5e8f8" />
+    <Filter>([level] = 78)</Filter>
+    <PolygonSymbolizer fill="#e4dfdc" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="0.8" stroke="#c5e8f8" />
+    <Filter>([level] = 89)</Filter>
+    <PolygonSymbolizer fill="#fff1df" />
   </Rule>
   <Rule>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <LineSymbolizer stroke="#c5e8f8" />
+    <Filter>([level] = 90)</Filter>
+    <PolygonSymbolizer fill="#fff5e9" />
+  </Rule>
+  <Rule>
+    <Filter>([level] = 94)</Filter>
+    <PolygonSymbolizer fill="#fffcf9" />
   </Rule>
 </Style>
-<Layer name="waterway"
+<Layer name="hillshade"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>waterway</StyleName>  </Layer>
+    <StyleName>hillshade</StyleName>  </Layer>
 
 <Style name="water" filter-mode="first">
   <Rule>
-    <PolygonSymbolizer fill="#dcf1fb" />
-    <LineSymbolizer stroke="#c5e8f8" />
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <PolygonSymbolizer fill="#f0f3f4" />
+    <LineSymbolizer stroke-width="0.8" stroke="#d3dbde" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <PolygonSymbolizer fill="#f0f3f4" />
+    <LineSymbolizer stroke="#d3dbde" stroke-width="1" />
   </Rule>
 </Style>
 <Layer name="water"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>water</StyleName>  </Layer>
+
+<Style name="waterway-casing" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'drain')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke="#c4d0d4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'drain')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#c4d0d4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([class] = 'drain')</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke="#c4d0d4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([class] = 'drain')</Filter>
+    <LineSymbolizer stroke-width="0.6" stroke="#c4d0d4" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([class] = 'drain')</Filter>
+    <LineSymbolizer stroke="#c4d0d4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] != 'drain')</Filter>
+    <LineSymbolizer stroke-width="3" stroke="#c4d0d4" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] != 'drain')</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#c4d0d4" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([class] != 'drain')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#c4d0d4" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([class] != 'drain')</Filter>
+    <LineSymbolizer stroke-width="0" stroke="#c4d0d4" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([class] != 'drain')</Filter>
+    <LineSymbolizer stroke="#c4d0d4" stroke-linecap="round" />
+  </Rule>
+</Style>
+<Layer name="waterway"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>waterway-casing</StyleName>  </Layer>
+
+<Style name="water" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <PolygonSymbolizer fill="#f0f3f4" />
+    <LineSymbolizer stroke-width="0.8" stroke="#d3dbde" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <PolygonSymbolizer fill="#f0f3f4" />
+    <LineSymbolizer stroke="#d3dbde" stroke-width="1" />
+  </Rule>
+</Style>
+<Layer name="water"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>water</StyleName>  </Layer>
+
+<Style name="waterway-fill" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'drain')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-dasharray="6, 4" stroke="#f0f3f4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'drain')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-dasharray="6, 4" stroke="#f0f3f4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([class] = 'drain')</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke-dasharray="6, 4" stroke="#f0f3f4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([class] = 'drain')</Filter>
+    <LineSymbolizer stroke-width="0.6" stroke-dasharray="6, 4" stroke="#f0f3f4" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([class] = 'drain')</Filter>
+    <LineSymbolizer stroke-dasharray="6, 4" stroke="#f0f3f4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] != 'drain')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke="#f0f3f4" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] != 'drain')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#f0f3f4" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([class] != 'drain')</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke="#f0f3f4" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([class] != 'drain')</Filter>
+    <LineSymbolizer stroke-width="0.6" stroke="#f0f3f4" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([class] != 'drain')</Filter>
+    <LineSymbolizer stroke="#f0f3f4" stroke-linecap="round" />
+  </Rule>
+</Style>
+<Layer name="waterway"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>waterway-fill</StyleName>  </Layer>
 
 <Layer name="aeroway"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
@@ -126,65 +447,206 @@
 <Style name="road" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <LineSymbolizer stroke-width="0.8" stroke="#aeaeae" />
+    <Filter>([class] = 'motorway_link')</Filter>
+    <LineSymbolizer stroke-width="1.2" stroke="#999999" />
   </Rule>
   <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
-    <LineSymbolizer stroke="#aeaeae" stroke-width="0" />
+    <Filter>([class] = 'motorway_link')</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke="#999999" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([class] = 'motorway_link')</Filter>
+    <LineSymbolizer stroke="#999999" stroke-width="0.3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([class] = 'main')</Filter>
+    <LineSymbolizer stroke-width="1.2" stroke="#999999" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([class] = 'main')</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke="#999999" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([class] = 'main')</Filter>
+    <LineSymbolizer stroke="#999999" stroke-width="0.3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([class] = 'motorway')</Filter>
+    <LineSymbolizer stroke-width="1.2" stroke="#999999" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([class] = 'motorway')</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke="#999999" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([class] = 'motorway')</Filter>
+    <LineSymbolizer stroke="#999999" stroke-width="0.3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <LineSymbolizer stroke-width="0.6" stroke="#999999" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="0.5" stroke="#999999" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <LineSymbolizer stroke="#999999" stroke-width="0.3" />
   </Rule>
 </Style>
 <Layer name="road"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>road</StyleName>  </Layer>
 
-<Style name="bridge" filter-mode="first">
+<Style name="bridge-aerialway" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([class] = 'aerialway')</Filter>
+    <LineSymbolizer stroke-width="4" stroke-dasharray="0.8, 8" stroke="#999999" />
+  </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <LineSymbolizer stroke-width="0.8" stroke="#aeaeae" />
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'aerialway')</Filter>
+    <LineSymbolizer stroke-width="3" stroke-dasharray="0.5, 5" stroke="#999999" />
   </Rule>
   <Rule>
     <MinScaleDenominator>200000</MinScaleDenominator>
-    <LineSymbolizer stroke="#aeaeae" stroke-width="0" />
+    <Filter>([class] = 'aerialway')</Filter>
+    <LineSymbolizer stroke="#999999" />
+  </Rule>
+</Style>
+<Style name="bridge" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([class] = 'motorway_link')</Filter>
+    <LineSymbolizer stroke-width="1.2" stroke="#999999" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([class] = 'motorway_link')</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke="#999999" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([class] = 'motorway_link')</Filter>
+    <LineSymbolizer stroke="#999999" stroke-width="0.3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([class] = 'main')</Filter>
+    <LineSymbolizer stroke-width="1.2" stroke="#999999" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([class] = 'main')</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke="#999999" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([class] = 'main')</Filter>
+    <LineSymbolizer stroke="#999999" stroke-width="0.3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([class] = 'motorway')</Filter>
+    <LineSymbolizer stroke-width="1.2" stroke="#999999" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([class] = 'motorway')</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke="#999999" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([class] = 'motorway')</Filter>
+    <LineSymbolizer stroke="#999999" stroke-width="0.3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <LineSymbolizer stroke-width="0.6" stroke="#999999" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="0.5" stroke="#999999" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <LineSymbolizer stroke="#999999" stroke-width="0.3" />
   </Rule>
 </Style>
 <Layer name="bridge"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>bridge</StyleName>  </Layer>
+    <StyleName>bridge</StyleName>
+    <StyleName>bridge-aerialway</StyleName>  </Layer>
 
-<Style name="admin" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <Filter>([admin_level] = 4)</Filter>
-    <LineSymbolizer stroke-width="1" stroke-dasharray="2, 3" stroke="#838383" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([admin_level] = 4)</Filter>
-    <LineSymbolizer stroke-width="0.6" stroke="#838383" stroke-dasharray="2, 1" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>1500000</MinScaleDenominator>
-    <Filter>([admin_level] = 4)</Filter>
-    <LineSymbolizer stroke="#838383" stroke-dasharray="2, 1" />
-  </Rule>
-</Style>
 <Style name="admin-fill" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <Filter>([admin_level] = 2) and ([maritime] = 0)</Filter>
-    <LineSymbolizer stroke-width="1.2" stroke-dasharray="5, 3" stroke="#ffffff" stroke-linejoin="round" smooth="1" />
+    <LineSymbolizer stroke-width="1.2" stroke-dasharray="5, 3" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" smooth="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([admin_level] = 2) and ([maritime] = 0)</Filter>
-    <LineSymbolizer stroke-width="0.6" stroke="#ffffff" stroke-linejoin="round" stroke-dasharray="3, 2" smooth="1" />
+    <LineSymbolizer stroke-width="0.6" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="3, 2" smooth="1" />
   </Rule>
   <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([admin_level] = 2) and ([maritime] = 0)</Filter>
-    <LineSymbolizer stroke="#ffffff" stroke-linejoin="round" stroke-dasharray="3, 2" stroke-width="0.4" smooth="1" />
+    <LineSymbolizer stroke-width="0.7" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="3, 2" smooth="1" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([admin_level] = 2) and ([maritime] = 0)</Filter>
+    <LineSymbolizer stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="3, 2" smooth="1" stroke-width="1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([admin_level] = 4)</Filter>
+    <LineSymbolizer stroke-width="1.2" stroke-dasharray="10, 8" stroke="#838383" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([admin_level] = 4)</Filter>
+    <LineSymbolizer stroke-width="1" stroke-dasharray="8, 6" stroke="#838383" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([admin_level] = 4)</Filter>
+    <LineSymbolizer stroke-width="0.8" stroke-dasharray="4, 2" stroke="#838383" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([admin_level] = 4)</Filter>
+    <LineSymbolizer stroke-width="0.4" stroke-dasharray="2, 1" stroke="#838383" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([admin_level] = 4)</Filter>
+    <LineSymbolizer stroke="#838383" stroke-width="0.4" />
   </Rule>
 </Style>
 <Style name="admin-case" filter-mode="first">
@@ -200,26 +662,138 @@
     <LineSymbolizer stroke-width="1" stroke="#666666" stroke-linejoin="round" stroke-linecap="round" smooth="1" />
   </Rule>
   <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([admin_level] = 2) and ([maritime] = 0)</Filter>
-    <LineSymbolizer stroke="#666666" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.8" smooth="1" />
+    <LineSymbolizer stroke-width="1.5" stroke="#666666" stroke-linejoin="round" stroke-linecap="round" smooth="1" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([admin_level] = 2) and ([maritime] = 0)</Filter>
+    <LineSymbolizer stroke="#666666" stroke-linejoin="round" stroke-linecap="round" smooth="1" stroke-width="2" />
+  </Rule>
+</Style>
+<Style name="admin-halo" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([admin_level] = 2) and ([maritime] = 0)</Filter>
+    <LineSymbolizer stroke-width="6" stroke="#ffcd6a" stroke-linejoin="round" stroke-linecap="round" smooth="1" stroke-opacity="0.8" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([admin_level] = 2) and ([maritime] = 0)</Filter>
+    <LineSymbolizer stroke-width="5" stroke="#ffcd6a" stroke-linejoin="round" stroke-linecap="round" smooth="1" stroke-opacity="0.8" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([admin_level] = 2) and ([maritime] = 0)</Filter>
+    <LineSymbolizer stroke-width="4" stroke="#ffcd6a" stroke-linejoin="round" stroke-linecap="round" smooth="1" stroke-opacity="0.8" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([admin_level] = 2) and ([maritime] = 0)</Filter>
+    <LineSymbolizer stroke-width="3" stroke="#ffcd6a" stroke-linejoin="round" stroke-linecap="round" smooth="1" stroke-opacity="0.8" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([admin_level] = 2) and ([maritime] = 0)</Filter>
+    <LineSymbolizer stroke-width="2.5" stroke="#ffcd6a" stroke-linejoin="round" stroke-linecap="round" smooth="1" stroke-opacity="0.8" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([admin_level] = 2) and ([maritime] = 0)</Filter>
+    <LineSymbolizer stroke-width="3" stroke="#ffcd6a" stroke-linejoin="round" stroke-linecap="round" smooth="1" stroke-opacity="0.8" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([admin_level] = 2) and ([maritime] = 0)</Filter>
+    <LineSymbolizer stroke="#ffcd6a" stroke-linejoin="round" stroke-linecap="round" smooth="1" stroke-opacity="0.8" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([admin_level] = 4)</Filter>
+    <LineSymbolizer stroke-width="6" stroke="#ffffff" stroke-opacity="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([admin_level] = 4)</Filter>
+    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-opacity="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([admin_level] = 4)</Filter>
+    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-opacity="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([admin_level] = 4)</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#ffffff" stroke-opacity="0.6" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <Filter>([admin_level] = 4)</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#ffffff" stroke-opacity="0.6" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([admin_level] = 4)</Filter>
+    <LineSymbolizer stroke="#ffffff" stroke-opacity="0.6" />
   </Rule>
 </Style>
 <Layer name="admin"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>admin-halo</StyleName>
     <StyleName>admin-case</StyleName>
-    <StyleName>admin-fill</StyleName>
-    <StyleName>admin</StyleName>  </Layer>
+    <StyleName>admin-fill</StyleName>  </Layer>
+
+<Style name="contour" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([ele] != 0) and ([index] = 10)</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" placement="line" size="8" fill="#999999" avoid-edges="true" halo-fill="#ffffff" halo-radius="0.8" halo-opacity="0.6" halo-rasterizer="fast" allow-overlap="true" ><![CDATA[[ele]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([ele] != 0) and ([index] = 10)</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" placement="line" size="8" fill="#999999" avoid-edges="true" halo-fill="#ffffff" halo-radius="0.8" halo-opacity="0.6" halo-rasterizer="fast" allow-overlap="true" ><![CDATA[[ele]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([ele] != 0) and ([index] = 10)</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" placement="line" size="8" fill="#999999" avoid-edges="true" halo-fill="#ffffff" halo-radius="0.8" halo-opacity="0.6" halo-rasterizer="fast" allow-overlap="true" ><![CDATA[[ele]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([ele] != 0) and ([index] &gt;= 5)</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" placement="line" size="8" fill="#999999" avoid-edges="true" halo-fill="#ffffff" halo-radius="0.8" halo-opacity="0.6" halo-rasterizer="fast" allow-overlap="true" ><![CDATA[[ele]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([ele] != 0) and ([index] &gt;= 5)</Filter>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" placement="line" size="8" fill="#999999" avoid-edges="true" halo-fill="#ffffff" halo-radius="0.8" halo-opacity="0.6" halo-rasterizer="fast" allow-overlap="true" ><![CDATA[[ele]]]></TextSymbolizer>
+  </Rule>
+</Style>
+<Layer name="contour"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>contour</StyleName>  </Layer>
 
 <Layer name="country_label_line"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
 
 <Layer name="country_label"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-      </Layer>
-
-<Layer name="marine_label"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
 
@@ -376,95 +950,14 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>place_label</StyleName>  </Layer>
 
-<Layer name="water_label"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-      </Layer>
-
-<Style name="poi_label" filter-mode="first">
+<Style name="water_label" filter-mode="first">
   <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <Filter>([maki] = 'park') and ([type] = 'Glacier')</Filter>
-    <TextSymbolizer size="22" fill="#868fa2" face-name="Merriweather Italic" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([maki] = 'park') and ([type] = 'Glacier')</Filter>
-    <TextSymbolizer size="18" fill="#868fa2" face-name="Merriweather Italic" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([maki] = 'park') and ([type] = 'Glacier')</Filter>
-    <TextSymbolizer size="14" fill="#868fa2" face-name="Merriweather Italic" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <Filter>([maki] = 'park') and ([type] = 'Peak')</Filter>
-    <TextSymbolizer size="22" fill="#9f86a2" face-name="Merriweather Italic" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([maki] = 'park') and ([type] = 'Peak')</Filter>
-    <TextSymbolizer size="18" fill="#9f86a2" face-name="Merriweather Italic" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([maki] = 'park') and ([type] = 'Peak')</Filter>
-    <TextSymbolizer size="14" fill="#9f86a2" face-name="Merriweather Italic" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <Filter>([maki] = 'park')</Filter>
-    <TextSymbolizer size="22" fill="#7e9171" face-name="Merriweather Italic" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([maki] = 'park')</Filter>
-    <TextSymbolizer size="18" fill="#7e9171" face-name="Merriweather Italic" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([maki] = 'park')</Filter>
-    <TextSymbolizer size="14" fill="#7e9171" face-name="Merriweather Italic" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <Filter>([type] = 'Glacier')</Filter>
-    <TextSymbolizer size="22" fill="#868fa2" face-name="Merriweather Italic" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([type] = 'Glacier')</Filter>
-    <TextSymbolizer size="18" fill="#868fa2" face-name="Merriweather Italic" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([type] = 'Glacier')</Filter>
-    <TextSymbolizer size="14" fill="#868fa2" face-name="Merriweather Italic" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <Filter>([type] = 'Peak')</Filter>
-    <TextSymbolizer size="22" fill="#9f86a2" face-name="Merriweather Italic" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <Filter>([type] = 'Peak')</Filter>
-    <TextSymbolizer size="18" fill="#9f86a2" face-name="Merriweather Italic" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>750000</MinScaleDenominator>
-    <Filter>([type] = 'Peak')</Filter>
-    <TextSymbolizer size="14" fill="#9f86a2" face-name="Merriweather Italic" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Merriweather Regular" fill="#98acb3" halo-radius="1" halo-fill="#ffffff" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
-<Layer name="poi_label"
+<Layer name="water_label"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>poi_label</StyleName>  </Layer>
+    <StyleName>water_label</StyleName>  </Layer>
 
 <Layer name="road_label"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
@@ -474,8 +967,78 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
 
-<Layer name="housenum_label"
+<Style name="poi_label" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([type] = 'Peak') and ([maki] = 'park')</Filter>
+    <TextSymbolizer size="8" fill="#444444" face-name="Merriweather Bold" text-transform="uppercase" line-spacing="6" character-spacing="0" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1.2" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([type] = 'Peak') and ([maki] = 'park')</Filter>
+    <TextSymbolizer size="14" fill="#444444" face-name="Merriweather Bold" text-transform="uppercase" line-spacing="6" character-spacing="0" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1.2" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([type] = 'Peak') and ([maki] = 'park')</Filter>
+    <TextSymbolizer size="12" fill="#444444" face-name="Merriweather Bold" text-transform="uppercase" line-spacing="6" character-spacing="0" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1.2" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([type] = 'Peak')</Filter>
+    <TextSymbolizer size="8" fill="#444444" face-name="Merriweather Bold" text-transform="uppercase" line-spacing="6" character-spacing="0" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1.2" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([type] = 'Peak')</Filter>
+    <TextSymbolizer fill="#444444" face-name="Merriweather Bold" text-transform="uppercase" line-spacing="6" character-spacing="0" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1.2" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([type] = 'Glacier') and ([maki] = 'park')</Filter>
+    <TextSymbolizer size="14" fill="#81bae6" text-transform="uppercase" face-name="Merriweather Italic" line-spacing="4" character-spacing="0" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1.2" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([type] = 'Glacier') and ([maki] = 'park')</Filter>
+    <TextSymbolizer size="14" fill="#81bae6" text-transform="uppercase" face-name="Merriweather Italic" line-spacing="4" character-spacing="0" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1.2" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([type] = 'Glacier') and ([maki] = 'park')</Filter>
+    <TextSymbolizer size="12" fill="#81bae6" text-transform="uppercase" face-name="Merriweather Italic" line-spacing="4" character-spacing="0" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1.2" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([type] = 'Glacier')</Filter>
+    <TextSymbolizer size="14" fill="#81bae6" text-transform="uppercase" face-name="Merriweather Italic" line-spacing="4" character-spacing="0" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1.2" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([type] = 'Glacier')</Filter>
+    <TextSymbolizer fill="#81bae6" text-transform="uppercase" face-name="Merriweather Italic" line-spacing="4" character-spacing="0" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1.2" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([maki] = 'park')</Filter>
+    <TextSymbolizer size="22" fill="#50877d" face-name="Merriweather Italic" line-spacing="4" character-spacing="0" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1.2" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([maki] = 'park')</Filter>
+    <TextSymbolizer size="14" fill="#50877d" face-name="Merriweather Italic" line-spacing="4" character-spacing="0" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1.2" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([maki] = 'park')</Filter>
+    <TextSymbolizer size="12" fill="#50877d" face-name="Merriweather Italic" line-spacing="4" character-spacing="0" wrap-width="40" halo-fill="#fdfaf1" halo-radius="1.2" ><![CDATA[[name]]]></TextSymbolizer>
+  </Rule>
+</Style>
+<Layer name="poi_label"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-      </Layer>
+    <StyleName>poi_label</StyleName>  </Layer>
 
 </Map>
