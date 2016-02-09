@@ -34,7 +34,7 @@ Map {
 #water {
   polygon-fill: @water;
   line-color: @water-casing;
-  [zoom>=8]{ line-width: 0.6; }
+  [zoom>=8]{ line-width: 0.4; }
   [zoom>=10]{ line-width: 0.5; }
   [zoom>=12]{ line-width: 0.8; }
   [zoom>=14]{ line-width: 1.0; }

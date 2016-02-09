@@ -16,43 +16,43 @@
 <Style name="contour-poly" filter-mode="first">
   <Rule>
     <Filter>([ele] &gt;= 3000)</Filter>
-    <PolygonSymbolizer fill="#d0b39f" />
+    <PolygonSymbolizer fill="#d7c3b4" />
   </Rule>
   <Rule>
     <Filter>([ele] &gt;= 2900)</Filter>
-    <PolygonSymbolizer fill="#d5baa7" />
+    <PolygonSymbolizer fill="#dbc9ba" />
   </Rule>
   <Rule>
     <Filter>([ele] &gt;= 2800)</Filter>
-    <PolygonSymbolizer fill="#d9c1af" />
+    <PolygonSymbolizer fill="#dfcec0" />
   </Rule>
   <Rule>
     <Filter>([ele] &gt;= 2700)</Filter>
-    <PolygonSymbolizer fill="#dec8b8" />
+    <PolygonSymbolizer fill="#e2d4c6" />
   </Rule>
   <Rule>
     <Filter>([ele] &gt;= 2600)</Filter>
-    <PolygonSymbolizer fill="#e2cfc0" />
+    <PolygonSymbolizer fill="#e6d9cc" />
   </Rule>
   <Rule>
     <Filter>([ele] &gt;= 2500)</Filter>
-    <PolygonSymbolizer fill="#e7d7c8" />
+    <PolygonSymbolizer fill="#eadfd3" />
   </Rule>
   <Rule>
     <Filter>([ele] &gt;= 2400)</Filter>
-    <PolygonSymbolizer fill="#ebded0" />
+    <PolygonSymbolizer fill="#eee4d9" />
   </Rule>
   <Rule>
     <Filter>([ele] &gt;= 2300)</Filter>
-    <PolygonSymbolizer fill="#f0e5d8" />
+    <PolygonSymbolizer fill="#f2eadf" />
   </Rule>
   <Rule>
     <Filter>([ele] &gt;= 2200)</Filter>
-    <PolygonSymbolizer fill="#f4ece1" />
+    <PolygonSymbolizer fill="#f5efe5" />
   </Rule>
   <Rule>
     <Filter>([ele] &gt;= 2100)</Filter>
-    <PolygonSymbolizer fill="#f9f3e9" />
+    <PolygonSymbolizer fill="#f9f5eb" />
   </Rule>
   <Rule>
     <Filter>([ele] &gt;= 2000)</Filter>
@@ -206,7 +206,7 @@
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
     <PolygonSymbolizer fill="#f3f7fc" />
-    <LineSymbolizer stroke-width="0.6" stroke="#c5cad0" />
+    <LineSymbolizer stroke-width="0.4" stroke="#c5cad0" />
   </Rule>
   <Rule>
     <MinScaleDenominator>3000000</MinScaleDenominator>
@@ -269,7 +269,7 @@
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
     <PolygonSymbolizer fill="#f3f7fc" />
-    <LineSymbolizer stroke-width="0.6" stroke="#c5cad0" />
+    <LineSymbolizer stroke-width="0.4" stroke="#c5cad0" />
   </Rule>
   <Rule>
     <MinScaleDenominator>3000000</MinScaleDenominator>
@@ -680,29 +680,29 @@
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([ele] != 0) and ([index] = 10)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" placement="line" size="8" fill="#999999" avoid-edges="true" halo-fill="#ffffff" halo-radius="0.8" halo-opacity="0.6" halo-rasterizer="fast" allow-overlap="true" ><![CDATA[[ele]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" placement="line" size="8" fill="#888888" avoid-edges="true" halo-fill="#ffffff" comp-op="multiply" halo-radius="0.8" halo-rasterizer="fast" allow-overlap="true" ><![CDATA[[ele]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([ele] != 0) and ([index] = 10)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" placement="line" size="8" fill="#999999" avoid-edges="true" halo-fill="#ffffff" halo-radius="0.8" halo-opacity="0.6" halo-rasterizer="fast" allow-overlap="true" ><![CDATA[[ele]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" placement="line" size="8" fill="#888888" avoid-edges="true" halo-fill="#ffffff" comp-op="multiply" halo-radius="0.8" halo-rasterizer="fast" allow-overlap="true" ><![CDATA[[ele]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([ele] != 0) and ([index] = 10)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" placement="line" size="8" fill="#999999" avoid-edges="true" halo-fill="#ffffff" halo-radius="0.8" halo-opacity="0.6" halo-rasterizer="fast" allow-overlap="true" ><![CDATA[[ele]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" placement="line" size="8" fill="#888888" avoid-edges="true" halo-fill="#ffffff" comp-op="multiply" halo-radius="0.8" halo-rasterizer="fast" allow-overlap="true" ><![CDATA[[ele]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([ele] != 0) and ([index] &gt;= 5)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" placement="line" size="8" fill="#999999" avoid-edges="true" halo-fill="#ffffff" halo-radius="0.8" halo-opacity="0.6" halo-rasterizer="fast" allow-overlap="true" ><![CDATA[[ele]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" placement="line" size="8" fill="#888888" avoid-edges="true" halo-fill="#ffffff" comp-op="multiply" halo-radius="0.8" halo-rasterizer="fast" allow-overlap="true" ><![CDATA[[ele]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([ele] != 0) and ([index] &gt;= 5)</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" placement="line" size="8" fill="#999999" avoid-edges="true" halo-fill="#ffffff" halo-radius="0.8" halo-opacity="0.6" halo-rasterizer="fast" allow-overlap="true" ><![CDATA[[ele]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" placement="line" size="8" fill="#888888" avoid-edges="true" halo-fill="#ffffff" comp-op="multiply" halo-radius="0.8" halo-rasterizer="fast" allow-overlap="true" ><![CDATA[[ele]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="contour"
@@ -725,144 +725,144 @@
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([type] = 'city')</Filter>
-    <TextSymbolizer size="18" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" halo-opacity="0.8" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="18" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
     <MarkersSymbolizer width="2" stroke-width="0" fill="#666666" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([type] = 'city')</Filter>
-    <TextSymbolizer size="16" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" halo-opacity="0.8" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="16" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
     <MarkersSymbolizer width="2" stroke-width="0" fill="#666666" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
     <Filter>([type] = 'city')</Filter>
-    <TextSymbolizer size="14" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" halo-opacity="0.8" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
     <MarkersSymbolizer width="2" stroke-width="0" fill="#666666" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
     <Filter>([type] = 'city')</Filter>
-    <TextSymbolizer size="12" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" halo-opacity="0.8" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
     <MarkersSymbolizer width="2" stroke-width="0" fill="#666666" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
     <Filter>([type] = 'city')</Filter>
-    <TextSymbolizer size="10" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" halo-opacity="0.8" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="10" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
     <MarkersSymbolizer width="2" stroke-width="0" fill="#666666" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>12500000</MinScaleDenominator>
     <Filter>([type] = 'city')</Filter>
-    <TextSymbolizer size="7" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" halo-opacity="0.8" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="7" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
     <MarkersSymbolizer width="2" stroke-width="0" fill="#666666" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000000</MinScaleDenominator>
     <Filter>([type] = 'city')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" halo-opacity="0.8" dy="-5" size="6" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" dy="-5" size="6" ><![CDATA[[name]]]></TextSymbolizer>
     <MarkersSymbolizer width="2" stroke-width="0" fill="#666666" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([type] = 'town')</Filter>
-    <TextSymbolizer size="15" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" halo-opacity="0.8" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
     <MarkersSymbolizer width="2" stroke-width="0" fill="#666666" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([type] = 'town')</Filter>
-    <TextSymbolizer size="13" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" halo-opacity="0.8" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="13" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
     <MarkersSymbolizer width="2" stroke-width="0" fill="#666666" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
     <Filter>([type] = 'town')</Filter>
-    <TextSymbolizer size="11" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" halo-opacity="0.8" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="11" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
     <MarkersSymbolizer width="2" stroke-width="0" fill="#666666" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
     <Filter>([type] = 'town')</Filter>
-    <TextSymbolizer size="9" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" halo-opacity="0.8" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="9" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
     <MarkersSymbolizer width="2" stroke-width="0" fill="#666666" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
     <Filter>([type] = 'town')</Filter>
-    <TextSymbolizer size="7" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" halo-opacity="0.8" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="7" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
     <MarkersSymbolizer width="2" stroke-width="0" fill="#666666" />
   </Rule>
   <Rule>
     <MinScaleDenominator>12500000</MinScaleDenominator>
     <Filter>([type] = 'town')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" halo-opacity="0.8" dy="-5" size="6" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" dy="-5" size="6" ><![CDATA[[name]]]></TextSymbolizer>
     <MarkersSymbolizer width="2" stroke-width="0" fill="#666666" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([type] = 'village')</Filter>
-    <TextSymbolizer size="12" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" halo-opacity="0.8" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
     <MarkersSymbolizer width="2" stroke-width="0" fill="#666666" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([type] = 'village')</Filter>
-    <TextSymbolizer size="10" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" halo-opacity="0.8" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="10" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
     <MarkersSymbolizer width="2" stroke-width="0" fill="#666666" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
     <Filter>([type] = 'village')</Filter>
-    <TextSymbolizer size="7" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" halo-opacity="0.8" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="7" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
     <MarkersSymbolizer width="2" stroke-width="0" fill="#666666" />
   </Rule>
   <Rule>
     <MinScaleDenominator>750000</MinScaleDenominator>
     <Filter>([type] = 'village')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" halo-opacity="0.8" dy="-5" size="6" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" dy="-5" size="6" ><![CDATA[[name]]]></TextSymbolizer>
     <MarkersSymbolizer width="2" stroke-width="0" fill="#666666" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([type] = 'hamlet')</Filter>
-    <TextSymbolizer size="13" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" halo-opacity="0.8" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="13" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
     <MarkersSymbolizer width="2" stroke-width="0" fill="#666666" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([type] = 'hamlet')</Filter>
-    <TextSymbolizer size="10" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" halo-opacity="0.8" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="10" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
     <MarkersSymbolizer width="2" stroke-width="0" fill="#666666" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([type] = 'hamlet')</Filter>
-    <TextSymbolizer size="8" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" halo-opacity="0.8" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="8" face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" dy="-5" ><![CDATA[[name]]]></TextSymbolizer>
     <MarkersSymbolizer width="2" stroke-width="0" fill="#666666" />
   </Rule>
   <Rule>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([type] = 'hamlet')</Filter>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" halo-opacity="0.8" dy="-5" size="6" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" dy="-5" size="6" ><![CDATA[[name]]]></TextSymbolizer>
     <MarkersSymbolizer width="2" stroke-width="0" fill="#666666" />
   </Rule>
   <Rule>
-    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" halo-opacity="0.8" dy="-5" size="6" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Arial Unicode MS Regular" fill="#666666" halo-fill="#fdfaf1" halo-radius="1" dy="-5" size="6" ><![CDATA[[name]]]></TextSymbolizer>
     <MarkersSymbolizer width="2" stroke-width="0" fill="#666666" />
   </Rule>
 </Style>

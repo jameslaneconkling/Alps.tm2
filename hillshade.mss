@@ -25,7 +25,7 @@
 @h-max: 3000;
 @h-steps: 10;
 @h-bottom: #FDFAF1; // #84b4ab;
-@h-top:  #d0b39f; // #FDFAF1;
+@h-top:  #d7c3b4; // #FDFAF1;
 // #783f17;
 // #b06e40;
 // #bb9c86;

@@ -7,7 +7,7 @@
   text-fill: @fill;
   text-halo-fill: @halo;
   text-halo-radius: 1;
-  text-halo-opacity: 0.8;
+  //text-halo-opacity: 0.8;
   text-dy: -5;
   text-size: 6;
   [type='hamlet'] {
@@ -97,11 +97,12 @@
     text-face-name: 'Arial Unicode MS Regular';
     text-placement: line;
     text-size: 8;
-    text-fill: #999;
+    text-fill: #888;
     text-avoid-edges: true;
     text-halo-fill: #fff;
+    text-comp-op: multiply;
     text-halo-radius: 0.8;
-    text-halo-opacity: 0.6;
+    //text-halo-opacity: 0.6;
     text-halo-rasterizer: fast;
     text-allow-overlap: true;
   }
