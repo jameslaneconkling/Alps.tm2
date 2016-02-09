@@ -1,5 +1,6 @@
 @bg: #fdfaf1;
-@water: #f0f3f4;
+@water: #f3f7fc; // #f0f3f4;
+@water-casing: #c5cad0;
 @crop: #fec;
 
 Map {
@@ -7,51 +8,42 @@ Map {
 }
 
 #waterway.casing::casing {
-  [class != 'drain'] {
-    line-color: darken(@water, 15%);
-    line-cap: round;
-    [zoom>=8]{ line-width: 0; }
-    [zoom>=10]{ line-width: 1; }
-    [zoom>=12]{ line-width: 2; }
-    [zoom>=14]{ line-width: 3; }
-  }
-  [class = 'drain'] {
-    line-color: darken(@water, 15%);
-    [zoom>=8]{ line-width: 0.6; }
-    [zoom>=10]{ line-width: 0.5; }
-    [zoom>=12]{ line-width: 1; }
-    [zoom>=14]{ line-width: 1.5; }
-  }
+  line-color: @water-casing;
+  line-cap: round;
+  [zoom>=8]{ line-width: 0; }
+  [zoom>=10]{ line-width: 1; }
+  [zoom>=12]{ line-width: 2; }
+  [zoom>=14]{ line-width: 3; }
+  //[class = 'drain'] {
+  //}
 }
 
 #waterway.fill::fill {
-  [class != 'drain'] {
-    line-color: @water;
-    line-cap: round;
-    [zoom>=8]{ line-width: 0.6; }
-    [zoom>=10]{ line-width: 0.5; }
-    [zoom>=12]{ line-width: 1; }
-    [zoom>=14]{ line-width: 1.5; }
-  }
+  line-color: @water;
+  line-cap: round;
+  [zoom>=8]{ line-width: 0.6; }
+  [zoom>=10]{ line-width: 0.5; }
+  [zoom>=12]{ line-width: 1; }
+  [zoom>=14]{ line-width: 1.5; }
   [class = 'drain'] {
     line-dasharray: 6,4;
-    line-color: @water;
-    [zoom>=8]{ line-width: 0.6; }
-    [zoom>=10]{ line-width: 0.5; }
-    [zoom>=12]{ line-width: 1; }
-    [zoom>=14]{ line-width: 1.5; }
+    line-cap: square;
   }
 }
 
 #water {
   polygon-fill: @water;
-  line-color: darken(@water, 10%);
-  line-width: 1;
-  [zoom>=11] { line-width: 0.8; }
+  line-color: @water-casing;
+  [zoom>=8]{ line-width: 0.6; }
+  [zoom>=10]{ line-width: 0.5; }
+  [zoom>=12]{ line-width: 0.8; }
+  [zoom>=14]{ line-width: 1.0; }
 }
 
 #building {
   polygon-fill: #cecece;
+  line-width:0.4;
+  line-color: #999;
 }
 
 #road,

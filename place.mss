@@ -60,7 +60,8 @@
     [zoom >= 12]{ text-size: 22; }
   }
   [type='Glacier'] { 
-    text-fill: darken(@glacier, 25%);
+//    text-fill: darken(@glacier, 25%);
+    text-fill: #777;
     text-transform: uppercase;
     text-face-name: 'Merriweather Italic';
     text-line-spacing: 4;
@@ -81,6 +82,7 @@
 
 #water_label {
   text-face-name: 'Merriweather Regular';
+  text-wrap-width: 40;
   text-name: [name];
   text-fill: darken(@water, 30%);
   text-halo-radius: 1;
