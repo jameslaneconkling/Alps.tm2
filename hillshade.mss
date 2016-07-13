@@ -6,15 +6,15 @@
 @l-max: 1000;
 @l-steps: 10;
 @l-bottom: #cdded2; // #84b4ab; // color ramp bottom
-@l-top:  #fdfcf1; // #FDFAF1; // color ramp top
+@l-top:  #f4f1e6; // #FDFAF1; // color ramp top
 
 @m-steps: 10;
 
-@h-min: 2000;
+@h-min: 1800;
 @h-max: 3000;
 @h-steps: 10;
-@h-bottom: #f2ebd4; // #84b4ab;
-@h-top:  #c4a892; // #FDFAF1;
+@h-bottom: #e0dccc; // #84b4ab;
+@h-top:  #bea27a; // #FDFAF1;
 
 @l0:  (@l-max - @l-min)*(0/@l-steps) + @l-min;
 @l1:  (@l-max - @l-min)*(1/@l-steps) + @l-min;
@@ -101,9 +101,9 @@
   comp-op: multiply;
   [level=94]{ polygon-fill: lighten(@highlight,5); }
   [level=90]{ polygon-fill: lighten(@highlight,2); }
-  [level=89]{ polygon-fill: lighten(@highlight,0); }
-  [level=78]{ polygon-fill: darken(@shadow, 0); }
-  [level=67]{ polygon-fill: darken(@shadow, 4); }
+  [level=89]{ polygon-fill: darken(@highlight,2); }
+  [level=78]{ polygon-fill: darken(@shadow, 4); }
+  [level=67]{ polygon-fill: darken(@shadow, 6); }
   [level=56]{ polygon-fill: darken(@shadow, 14); }
 }
 
