@@ -5,8 +5,16 @@
 @l-min: 0;
 @l-max: 1000;
 @l-steps: 10;
-@l-bottom: #CDDED6; // #84b4ab; // color ramp bottom
-@l-top:  #FDFAF1; // #FDFAF1; // color ramp top
+@l-bottom: #cdded2; // #84b4ab; // color ramp bottom
+@l-top:  #fdfcf1; // #FDFAF1; // color ramp top
+
+@m-steps: 10;
+
+@h-min: 2000;
+@h-max: 3000;
+@h-steps: 10;
+@h-bottom: #f2ebd4; // #84b4ab;
+@h-top:  #c4a892; // #FDFAF1;
 
 @l0:  (@l-max - @l-min)*(0/@l-steps) + @l-min;
 @l1:  (@l-max - @l-min)*(1/@l-steps) + @l-min;
@@ -20,16 +28,17 @@
 @l9:  (@l-max - @l-min)*(9/@l-steps) + @l-min;
 @l10: (@l-max - @l-min)*(10/@l-steps) + @l-min;
 
-
-@h-min: 2000;
-@h-max: 3000;
-@h-steps: 10;
-@h-bottom: #FDFAF1; // #84b4ab;
-@h-top:  #d7c3b4; // #FDFAF1;
-// #783f17;
-// #b06e40;
-// #bb9c86;
-// #d0b39f;
+@m0:  (@h-min - @l-max)*(0/@m-steps) + @l-max;
+@m1:  (@h-min - @l-max)*(1/@m-steps) + @l-max;
+@m2:  (@h-min - @l-max)*(2/@m-steps) + @l-max;
+@m3:  (@h-min - @l-max)*(3/@m-steps) + @l-max;
+@m4:  (@h-min - @l-max)*(4/@m-steps) + @l-max;
+@m5:  (@h-min - @l-max)*(5/@m-steps) + @l-max;
+@m6:  (@h-min - @l-max)*(6/@m-steps) + @l-max;
+@m7:  (@h-min - @l-max)*(7/@m-steps) + @l-max;
+@m8:  (@h-min - @l-max)*(8/@m-steps) + @l-max;
+@m9:  (@h-min - @l-max)*(9/@m-steps) + @l-max;
+@m10: (@h-min - @l-max)*(10/@m-steps) + @l-max;
 
 @h0:  (@h-max - @h-min)*(0/@h-steps) + @h-min;
 @h1:  (@h-max - @h-min)*(1/@h-steps) + @h-min;
@@ -56,6 +65,18 @@
   [ele>=@l8]  { polygon-fill: mix(@l-top, @l-bottom, 8/@l-steps*100); }
   [ele>=@l9]  { polygon-fill: mix(@l-top, @l-bottom, 9/@l-steps*100); }
   [ele>=@l10] { polygon-fill: mix(@l-top, @l-bottom, 10/@l-steps*100); }
+
+  [ele>=@m0]  { polygon-fill: mix(@h-bottom, @l-top, 0/@l-steps*100); }
+  [ele>=@m1]  { polygon-fill: mix(@h-bottom, @l-top, 1/@l-steps*100); }
+  [ele>=@m2]  { polygon-fill: mix(@h-bottom, @l-top, 2/@l-steps*100); }
+  [ele>=@m3]  { polygon-fill: mix(@h-bottom, @l-top, 3/@l-steps*100); }
+  [ele>=@m4]  { polygon-fill: mix(@h-bottom, @l-top, 4/@l-steps*100); }
+  [ele>=@m5]  { polygon-fill: mix(@h-bottom, @l-top, 5/@l-steps*100); }
+  [ele>=@m6]  { polygon-fill: mix(@h-bottom, @l-top, 6/@l-steps*100); }
+  [ele>=@m7]  { polygon-fill: mix(@h-bottom, @l-top, 7/@l-steps*100); }
+  [ele>=@m8]  { polygon-fill: mix(@h-bottom, @l-top, 8/@l-steps*100); }
+  [ele>=@m9]  { polygon-fill: mix(@h-bottom, @l-top, 9/@l-steps*100); }
+  [ele>=@m10] { polygon-fill: mix(@h-bottom, @l-top, 10/@l-steps*100); }
 
   [ele>=@h0]  { polygon-fill: mix(@h-top, @h-bottom, 0/@h-steps*100); }
   [ele>=@h1]  { polygon-fill: mix(@h-top, @h-bottom, 1/@h-steps*100); }
