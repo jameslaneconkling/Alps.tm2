@@ -7,7 +7,7 @@
   text-fill: @fill;
   text-halo-fill: @halo;
   text-halo-radius: 1;
-  //text-halo-opacity: 0.8;
+  text-halo-opacity: 0.6;
   text-dy: -5;
   text-size: 6;
   [type='hamlet'] {
@@ -49,11 +49,14 @@
 #poi_label [type='Peak']{  
   text-name: [name];
   text-wrap-width: 40;
+  text-halo-fill: @halo;
+  text-halo-radius: 1.2;
+  text-halo-opacity: 0.8;
   [maki='park'] { 
     text-fill: #50877d;
     text-face-name: 'Merriweather Italic';
     text-line-spacing: 4;
-    text-character-spacing: 0;
+    text-character-spacing: 1;
     [zoom < 10]{ text-size: 12; }
     [zoom >= 10]{ text-size: 14; }
     [zoom >= 12]{ text-size: 18; }
@@ -65,7 +68,7 @@
     text-transform: uppercase;
     text-face-name: 'Merriweather Italic';
     text-line-spacing: 4;
-    text-character-spacing: 0;
+    text-character-spacing: 1;
     [zoom >= 12]{ text-size: 14; }
   }
   [type='Peak'] { 
@@ -73,11 +76,9 @@
     text-face-name: 'Merriweather Bold';
     text-transform: uppercase;
     text-line-spacing: 6;
-    text-character-spacing: 0;
+    text-character-spacing: 1;
     [zoom >= 12]{ text-size: 8; }
   }
-  text-halo-fill: @halo;
-  text-halo-radius: 1.2;
 }
 
 #water_label {
@@ -102,7 +103,7 @@
     text-halo-fill: #fff;
     text-comp-op: multiply;
     text-halo-radius: 0.8;
-    //text-halo-opacity: 0.6;
+    text-halo-opacity: 0.6;
     text-halo-rasterizer: fast;
     text-allow-overlap: true;
   }
