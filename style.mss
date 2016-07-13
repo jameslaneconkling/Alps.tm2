@@ -87,10 +87,10 @@ Map {
     line-join: round;
     line-cap: round;
     line-smooth: 1;
-    line-opacity: 0.8;
+    line-opacity: 1;
     [zoom>=6] { line-width: 3; }
-    [zoom>=9] { line-width: 2.5; }
-    [zoom>=10] { line-width: 3; }
+    [zoom>=9] { line-width: 3.2; }
+    [zoom>=10] { line-width: 3.8; }
     [zoom>=11]{ line-width: 4; }
     [zoom>=12]{ line-width: 5; }
     [zoom>=14]{ line-width: 6; }
@@ -102,19 +102,18 @@ Map {
     line-smooth: 1;
     line-width: 2;
     [zoom>=7] { line-width: 1.5; }
-    [zoom>=9] { line-width: 1; }
+    [zoom>=10] { line-width: 1.8; }
     [zoom>=11]{ line-width: 2; }
   }
   ::fill {
     line-color: white;
     line-join: round;
     line-cap: round;
-    line-dasharray: 3,2;
     line-smooth: 1;
     line-width: 1;
-    [zoom>=7] { line-width: 0.7; }
-    [zoom>=9] { line-width: 0.6; }
-    [zoom>=11]{ line-width: 1.2; line-dasharray: 5,3; }
+    [zoom>=7] { line-width: 0.7; line-dasharray: 3,2; }
+    [zoom>=9] { line-width: 0.8; line-dasharray: 4,2.5; }
+    [zoom>=11]{ line-width: 1.0; line-dasharray: 4.5,3; }
   }
 }
 
